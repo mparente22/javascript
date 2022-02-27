@@ -1,36 +1,34 @@
-var userName = 'Cambria';
-userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
-const userQuestion = 'Will this work?'; {
-console.log(`${userName} asked, ${userQuestion}`);
-}
+let userName = prompt ('What is your name?');
+let userQuestion = prompt ('What is your question?');
+// userName ? document.write(`Hello, ${userName}!`) : console.log('Hello!'); 
 let randomNumber = Math.floor(Math.random() * 8);
 let eightBall = '';
 switch (randomNumber) {
 case 0:
-eightBall = 'It is certain';
+    eightBall = 'It is certain';
 break;
 case 1:
-'It is decidedly so';
+    eightBall = 'It is decidedly so';
 break;
 case 2:
-'Reply hazy try again';
+    eightBall = 'Reply hazy try again';
 break;
 case 3:
-'Cannot predict now';
+    eightBall = 'Cannot predict now';
 break;
 case 4:
-'Do not count on it';
+    eightBall = 'Do not count on it';
 break;
 case 5:
-'My sources say no';
+    eightBall = 'My sources say no';
 break;
 case 6:
-'Outlook not so good';
+    eightBall = 'Outlook not so good';
 break;
 case 7:
 'Signs point to yes';
 break; 
 }
-{
-console.log(`The eight ball answered: ${eightBall}`); 
-}
+    {
+        document.write(`<strong>Hello ${userName}!</strong> <br><br> You asked, <strong>${userQuestion}</strong> <br><br> The eight ball answered: <strong>${eightBall}</strong>`);
+        }
