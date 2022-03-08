@@ -114,3 +114,53 @@ for (let i=0; i <= 10; i++){
 for (let i =0; i <=100; i+=5){
     console.log(i)
 }
+
+/* for loop syntax
+for (initial expression; "boolean - True or False" condition; increment expression)
+
+*****below is an example that loops from 0 to 10*****
+for(let i=0; i <= 10; i++)
+  console.log(i)
+
+*****below is an example that only prints even numbers*****
+for (let i = 1; i <= 20; i += 2)
+console.log(i)
+
+*****below is an example that only prints even numbers*****
+for (let i = 0; i <= 20; i += 2)
+console.log(i)
+
+***i is only the placeholder. You can use any name there***
+
+
+const animals = ['lions', 'tigers', 'bears'];
+
+for (let i = 0; i < animals.length - 2; i++) {
+  console.log(`Awesome ${animals[0]}, Awesome ${animals[1]}, Awesome ${animals[2]}`);
+}
+
+for (let i = 0; i <= animals.length -1; i++) {
+    console.log(`Awesome ${animals[i]}`)
+}
+
+for (let i = 1; i <= 10; i++){
+  console.log(`i is: ${i}`);
+for (let j = 1; j <= 2; j++){
+  console.log(`                  j is: ${i}`)
+}
+}
+
+const seatingChart =[
+  ['Adam', 'Thomas', 'James'],
+  ['Kristen', 'Bria', 'Sandy'],
+  ['Jack', 'Erica', 'Yuma']
+]
+
+for(let i=0; i < seatingChart.length; i++){
+  const seatingRow = seatingChart[i];
+     console.log(`ROW #${i + 1}`)
+  for(let j = 0; j < seatingRow.length; j++) {
+    console.log(seatingRow[j])
+  }
+}
+*/
