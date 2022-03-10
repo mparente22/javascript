@@ -105,7 +105,6 @@ for (let i=0; i < animals.length; i++){
     console.log(`Awesome ${animals[i]}`)
 }
 
-*/
 
 for (let i=0; i <= 10; i++){
     console.log(i)
@@ -115,7 +114,7 @@ for (let i =0; i <=100; i+=5){
     console.log(i)
 }
 
-/* for loop syntax
+for loop syntax
 for (initial expression; "boolean - True or False" condition; increment expression)
 
 *****below is an example that loops from 0 to 10*****
@@ -150,6 +149,7 @@ for (let j = 1; j <= 2; j++){
 }
 }
 
+
 const seatingChart =[
   ['Adam', 'Thomas', 'James'],
   ['Kristen', 'Bria', 'Sandy'],
@@ -163,4 +163,90 @@ for(let i=0; i < seatingChart.length; i++){
     console.log(seatingRow[j])
   }
 }
+
+//NEW FOR LOOP. MAKES BEST SENSE WITH ARRAYS OR THINGS WERE MATH MAKES 0 SENSE. IE DOESNT SUPPORT
+for (let seatingRow of seatingChart) {
+  for (let student of seatingRow) {
+    console.log(student)
+  }
+}
+
+
+
+for(let char of 'HELLO WORLD'){
+  console.log(char);
+}
+
+
+const numbers = [1,2,3,4,5,6,7,8,9]; //DON'T CHANGE THIS LINE PLEASE!
+
+for(let num of numbers){
+    console.log(num * num)
+}
+
+ for loop syntax
+for (initial expression; "boolean - True or False" condition; increment expression)
+
+*****below is an example that loops from 0 to 10*****
+for(let i=0; i <= 10; i++)
+  console.log(i)
+
+*****below is an example that only prints even numbers*****
+for (let i = 1; i <= 20; i += 2)
+console.log(i)
+
+*****below is an example that only prints even numbers*****
+for (let i = 0; i <= 20; i += 2)
+console.log(i)
+
+***i is only the placeholder. You can use any name there***
+
+
+const animals = ['lions', 'tigers', 'bears'];
+
+for (let i = 0; i < animals.length - 2; i++) {
+  console.log(`Awesome ${animals[0]}, Awesome ${animals[1]}, Awesome ${animals[2]}`);
+}
+
+for (let i = 0; i <= animals.length -1; i++) {
+    console.log(`Awesome ${animals[i]}`)
+}
+
+for (let i = 1; i <= 10; i++){
+  console.log(`i is: ${i}`);
+for (let j = 1; j <= 2; j++){
+  console.log(`                  j is: ${i}`)
+}
+}
+
+
+const seatingChart =[
+  ['Adam', 'Thomas', 'James'],
+  ['Kristen', 'Bria', 'Sandy'],
+  ['Jack', 'Erica', 'Yuma']
+]
+
+for(let i=0; i < seatingChart.length; i++){
+  const seatingRow = seatingChart[i];
+     console.log(`ROW #${i + 1}`)
+  for(let j = 0; j < seatingRow.length; j++) {
+    console.log(seatingRow[j])
+  }
+}
+
+
+const seatingChart =[
+  ['Adam', 'Thomas', 'James'],
+  ['Kristen', 'Bria', 'Sandy'],
+  ['Jack', 'Erica', 'Yuma']
+]
+
+for(let row of seatingChart) {
+  console.log(`${row}`)
+}
 */
+
+const numbers = [1,2,3,4,5,6,7,8,9]; //DON'T CHANGE THIS LINE PLEASE!
+
+for(num of numbers)
+console.log(num * num)
